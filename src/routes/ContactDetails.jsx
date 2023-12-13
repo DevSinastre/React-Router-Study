@@ -8,7 +8,7 @@ const ContactDetails = () =>{
 
     const handleContact = () =>{
         console.log('mensagem enviada');
-        return navigate("/");
+        return navigate("/React-Router-Study/");
     };
 
     return(

@@ -30,21 +30,21 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage/>,
     children: [
       {
-        path: "/",
+        path: "React-Router-Study",
         element: <Pokemons/>
       },
       {
-        path: "/details",
+        path: "/React-Router-Study/details",
         element: <PokemonDetails/>,
       },
       //5 - nested routes - identificador único
       {
-        path: "/details/:id",
+        path: "React-Router-Study/details/:id",
         element: <ContactDetails/>,
       },
       //7 - navigate para páginas não existentes
       {
-        path: "oldcontact",
+        path: "React-Router-Study/oldcontact",
         element: <Navigate to="/details"/>
       }
     ]
