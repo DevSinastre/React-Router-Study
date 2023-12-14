@@ -9,7 +9,7 @@ import ErrorPage from './routes/ErrorPage.jsx'
 import ContactDetails from './routes/ContactDetails.jsx'
 
 // 1- Configurando o router
-import {createBrowserRouter, Navigate, RouterProvider} from 'react-router-dom';
+import {createBrowserRouter, createHashRouter, Navigate, RouterProvider} from 'react-router-dom';
 
 // const router = createBrowserRouter([
 //   {
@@ -22,7 +22,7 @@ import {createBrowserRouter, Navigate, RouterProvider} from 'react-router-dom';
 //   }
 // ]);
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App/>,
