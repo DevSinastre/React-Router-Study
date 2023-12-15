@@ -24,28 +24,28 @@ import {createBrowserRouter, createHashRouter, Navigate, RouterProvider} from 'r
 
 const router = createHashRouter([
   {
-    path: "/",
+    path: "/React-Router-Study/",
     element: <App/>,
     //3 - error Page
     errorElement: <ErrorPage/>,
     children: [
       {
-        path: "/",
+        path: "/React-Router-Study/",
         element: <Pokemons/>
       },
       {
-        path: "/details",
+        path: "/React-Router-Study/details",
         element: <PokemonDetails/>,
       },
       //5 - nested routes - identificador único
       {
-        path: "/details/:id",
+        path: "/React-Router-Study/details/:id",
         element: <ContactDetails/>,
       },
       //7 - navigate para páginas não existentes
       {
-        path: "oldcontact",
-        element: <Navigate to="/details"/>
+        path: "/React-Router-Study/oldcontact",
+        element: <Navigate to="/React-Router-Study/details"/>
       }
     ]
   },
